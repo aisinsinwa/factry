@@ -1,16 +1,25 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Image Insert Sample</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>画像を横に並べる</title>
+<style>
+    .container {
+        display: flex; /* Flexboxを使用して要素を並べる */
+    }
+    .image {
+        width: 50%; /* 画像の幅を半分に設定 */
+        height: auto; /* アスペクト比を保持しつつ高さを自動調整 */
+    }
+</style>
 </head>
 <body>
-<p>オリジナルの画像ズ</p>
-<img src="sample1.jpg">
-<p>width・height属性で定</p>
-<img src="sample1.jpg" width="200px" height="100px">
-<p>画像のパスを間違えるとalt属性ストが表示</p>
-<img src="sample1.jpg" alt="sample1.jpgが表示される予定です。">
+
+<div class="container">
+    <img class="image" src="image1.jpg" alt="画像1">
+    <img class="image" src="image2.jpg" alt="画像2">
+</div>
+
 </body>
 </html>
